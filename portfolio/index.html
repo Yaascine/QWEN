@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ahmed Raza Khan — Electrical Engineer</title>
+<meta name="description" content="Portfolio of Ahmed Raza Khan, Electrical & Power Systems Engineer, NUST Islamabad. Power systems, embedded design, PCBs and protection engineering." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&family=Archivo+Black&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/style.css" />
+<script>document.documentElement.classList.add("js");</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23fffdf5'/><path d='M55 8 L25 58 H45 L40 92 L75 42 H52 Z' fill='%23000' stroke='%23ff5c00' stroke-width='4'/></svg>" />
+</head>
+<body>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="site-header" id="top">
+  <nav class="nav container" aria-label="Main navigation">
+    <a href="#top" class="brand mono">
+      <span class="brand-mark" aria-hidden="true">⚡</span>
+      <span class="brand-name">A.R.K<span class="accent">.</span>eng</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"     class="nav-link mono">01 / About</a></li>
+      <li><a href="#skills"    class="nav-link mono">02 / Skills</a></li>
+      <li><a href="#projects"  class="nav-link mono">03 / Projects</a></li>
+      <li><a href="#experience"class="nav-link mono">04 / Work</a></li>
+      <li><a href="#education" class="nav-link mono">05 / Education</a></li>
+      <li><a href="#contact"   class="nav-link mono">06 / Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="btn btn-icon" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+      <a href="#" id="resumeBtn" class="btn btn-primary btn-sm">RESUME ↓</a>
+      <button id="navToggle" class="btn btn-icon nav-burger" aria-label="Open menu" aria-expanded="false">≡</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero section" id="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-left reveal">
+      <p class="kicker mono">// ISLAMABAD, PAKISTAN · NUST '22</p>
+      <h1 class="hero-title">
+        AHMED<br/><span class="stroke">RAZA KHAN</span>
+      </h1>
+      <p class="hero-sub">
+        I am an <strong>Electrical &amp; Power Systems Engineer</strong> who designs
+        things that carry current — from <em>133&nbsp;kV substation protection</em>
+        to <em>4-layer switch-mode power supplies</em>. Clean schematics, sane
+        load-flow studies, and firmware that survives the field.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">VIEW PROJECTS</a>
+        <a href="#contact" class="btn btn-ghost">GET IN TOUCH</a>
+      </div>
+
+      <dl class="hero-stats mono" aria-label="Career snapshot">
+        <div class="stat"><dt>YEARS EXP</dt><dd data-count="5">0</dd></div>
+        <div class="stat"><dt>PROJECTS</dt><dd data-count="24">0</dd></div>
+        <div class="stat"><dt>MW STUDIED</dt><dd data-count="310">0</dd></div>
+        <div class="stat"><dt>CGPA</dt><dd>3.71</dd></div>
+      </dl>
+    </div>
+
+    <aside class="hero-right reveal">
+      <div class="id-card">
+        <div class="id-card-head mono">
+          <span>ENGINEER_ID :: 0xARK</span><span class="dot-live"></span>
+        </div>
+
+        <!-- Inline SVG: schematic-style portrait / circuit board -->
+        <svg viewBox="0 0 320 300" role="img" aria-label="Stylised circuit-board illustration" class="board-art">
+          <rect x="6" y="6" width="308" height="288" rx="0" class="board-bg"/>
+          <!-- traces -->
+          <g class="trace">
+            <path d="M20 60 H120 V120 H220 V40 H300" />
+            <path d="M20 240 H90 V180 H180 V250 H300" />
+            <path d="M60 20 V90 M260 280 V200" />
+            <path d="M140 20 V60 M200 280 V240" />
+          </g>
+          <!-- resistor symbol -->
+          <g class="part">
+            <path d="M120 120 h10 l6 -12 10 24 10 -24 10 24 10 -12 h10 v0" />
+          </g>
+          <!-- capacitor symbol -->
+          <g class="part">
+            <path d="M90 180 h25 M90 168 v24 M122 168 v24 M122 180 h28" />
+          </g>
+          <!-- IC chip -->
+          <rect x="150" y="90" width="90" height="60" class="chip" />
+          <g class="pin">
+            <path d="M150 102 h-14 M150 118 h-14 M150 134 h-14 M240 102 h14 M240 118 h14 M240 134 h14" />
+          </g>
+          <text x="195" y="125" text-anchor="middle" class="chip-label mono">ARK-EE</text>
+          <!-- vias -->
+          <g class="via">
+            <circle cx="20" cy="60" r="5"/><circle cx="300" cy="40" r="5"/>
+            <circle cx="20" cy="240" r="5"/><circle cx="300" cy="250" r="5"/>
+            <circle cx="60" cy="20" r="5"/><circle cx="260" cy="280" r="5"/>
+          </g>
+          <!-- lightning bolt badge -->
+          <path d="M182 190 L158 226 H176 L172 262 L200 220 H180 Z" class="bolt"/>
+        </svg>
+
+        <ul class="id-list mono">
+          <li><span>ROLE</span><b>EE / Power Systems</b></li>
+          <li><span>DEPT</span><b>SEE &amp; ME, NUST</b></li>
+          <li><span>STATUS</span><b class="ok">OPEN TO WORK</b></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track mono">
+    <span>LOAD FLOW ⚡ ETAP ⚡ MATLAB/SIMULINK ⚡ KiCAD ⚡ ALTIUM ⚡ PROTECTION COORDINATION ⚡ DSP ⚡ EMBEDDED C ⚡ POWER ELECTRONICS ⚡ PLC/SCADA ⚡ LTSPICE ⚡ PCB LAYOUT ⚡ IEEE 1547 ⚡</span>
+    <span>LOAD FLOW ⚡ ETAP ⚡ MATLAB/SIMULINK ⚡ KiCAD ⚡ ALTIUM ⚡ PROTECTION COORDINATION ⚡ DSP ⚡ EMBEDDED C ⚡ POWER ELECTRONICS ⚡ PLC/SCADA ⚡ LTSPICE ⚡ PCB LAYOUT ⚡ IEEE 1547 ⚡</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="num mono">01</span> ABOUT</h2>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="lead">
+          BS Electrical Engineering from the <strong>School of Electrical Engineering
+          &amp; Mechanical Sciences (SEEMS), NUST</strong>, Islamabad. Five years in
+          between consulting desks, transition shops and a very loud HV lab.
+        </p>
+        <p>
+          My work sits at the intersection of <strong>power systems</strong> and
+          <strong>embedded electronics</strong>: I can run a fault-current study for a
+          132/13&nbsp;kV grid station in the morning and debug a buck-converter control
+          loop on the scope in the afternoon. I care about documentation, standards
+          compliance (IEC&nbsp;60255 / IEEE), and hardware that does not smoke on first power-up.
+        </p>
+        <p>
+          Currently building solar + storage monitoring hardware and writing about
+          protection coordination on my blog. Available for contract and full-time roles.
+        </p>
+      </div>
+
+      <div class="facts reveal">
+        <div class="fact"><span class="mono">BASE</span>Islamabad / Rawalpindi, PK</div>
+        <div class="fact"><span class="mono">FOCUS</span>Power Systems · Embedded · Power Electronics</div>
+        <div class="fact"><span class="mono">LANGS</span>Urdu (native) · English (C1) · Pashto (B1)</div>
+        <div class="fact"><span class="mono">CERT</span>PEPC BERS Training · ETAP Certified User</div>
+        <div class="fact"><span class="mono">HOURS</span>PKT (UTC+5) · usually online 09:00–19:00</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section section-alt" id="skills">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="num mono">02</span> SKILLS &amp; TOOLBOX</h2>
+
+    <div class="skill-cols">
+      <article class="panel reveal">
+        <h3 class="mono panel-tag">POWER SYSTEMS</h3>
+        <div class="bar-row"><span>Load flow / short circuit</span><i style="--w:92%"></i></div>
+        <div class="bar-row"><span>Protection coordination</span><i style="--w:85%"></i></div>
+        <div class="bar-row"><span>ETAP / DIgSILENT</span><i style="--w:80%"></i></div>
+        <div class="bar-row"><span>Harmonics &amp; power quality</span><i style="--w:74%"></i></div>
+      </article>
+
+      <article class="panel reveal">
+        <h3 class="mono panel-tag">ELECTRONICS</h3>
+        <div class="bar-row"><span>Analog / SMPS design</span><i style="--w:88%"></i></div>
+        <div class="bar-row"><span>PCB layout (KiCad/Altium)</span><i style="--w:82%"></i></div>
+        <div class="bar-row"><span>LTSpice / PSpice sim</span><i style="--w:86%"></i></div>
+        <div class="bar-row"><span>EMC &amp; bench bring-up</span><i style="--w:70%"></i></div>
+      </article>
+
+      <article class="panel reveal">
+        <h3 class="mono panel-tag">PROGRAMMING</h3>
+        <div class="bar-row"><span>C / Embedded C (ARM, AVR)</span><i style="--w:90%"></i></div>
+        <div class="bar-row"><span>MATLAB / Simulink</span><i style="--w:87%"></i></div>
+        <div class="bar-row"><span>Python (PyQt, pandas)</span><i style="--w:78%"></i></div>
+        <div class="bar-row"><span>VHDL / Verilog</span><i style="--w:62%"></i></div>
+      </article>
+
+      <article class="panel reveal">
+        <h3 class="mono panel-tag">INDUSTRIAL</h3>
+        <div class="bar-row"><span>PLC (Siemens TIA Portal)</span><i style="--w:76%"></i></div>
+        <div class="bar-row"><span>SCADA / Modbus, DNP3</span><i style="--w:72%"></i></div>
+        <div class="bar-row"><span>VFDs &amp; motor controls</span><i style="--w:80%"></i></div>
+        <div class="bar-row"><span>AutoCAD Electrical</span><i style="--w:84%"></i></div>
+      </article>
+    </div>
+
+    <div class="chips reveal" id="chipCloud">
+      <!-- chips injected by JS -->
+    </div>
+    <p class="hint mono reveal">↑ click a skill to filter projects</p>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-head-row">
+      <h2 class="section-title reveal"><span class="num mono">03</span> SELECTED PROJECTS</h2>
+      <div class="filters mono reveal" role="tablist" aria-label="Project categories">
+        <button class="filter is-active" data-filter="all">ALL</button>
+        <button class="filter" data-filter="power">POWER</button>
+        <button class="filter" data-filter="embedded">EMBEDDED</button>
+        <button class="filter" data-filter="renewable">RENEWABLE</button>
+        <button class="filter" data-filter="pcb">PCB</button>
+      </div>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="card project-card reveal" data-cat="power" data-tags="ETAP,MATLAB,Protection">
+        <div class="card-top mono"><span>P-01</span><span>2024</span></div>
+        <h3>132/13 kV Grid Station Protection Study</h3>
+        <p>Full load-flow, short-circuit and relay coordination study for a double-busbar
+           grid station. Set 44 numerically-controlled relays; reduced average clearing time by 38%.</p>
+        <ul class="tag-row mono"><li>ETAP</li><li>IEC 60255</li><li>MCC</li></ul>
+        <a class="card-link mono" href="#" data-project="p1">CASE STUDY →</a>
+      </article>
+
+      <article class="card project-card reveal" data-cat="embedded pcb" data-tags="Embedded C,KiCad,STM32">
+        <div class="card-top mono"><span>P-02</span><span>2024</span></div>
+        <h3>Three-Phase Energy Monitor (STM32)</h3>
+        <p>4-layer CT/PT-based meter with 0.5% accuracy, MODBUS-RTU uplink and an e-paper display.
+           Designed the PCB in KiCad; FCC-compliant EMC pass on second spin.</p>
+        <ul class="tag-row mono"><li>STM32</li><li>KiCad</li><li>Modbus</li></ul>
+        <a class="card-link mono" href="#" data-project="p2">CASE STUDY →</a>
+      </article>
+
+      <article class="card project-card reveal" data-cat="renewable" data-tags="MATLAB,Solar,MPPT">
+        <div class="card-top mono"><span>P-03</span><span>2023</span></div>
+        <h3>250 kW Rooftop Solar Feasibility</h3>
+        <p>Simulation and single-line design for a NUST block rooftop array. MPPT efficiency model
+           in Simulink plus shading analysis; delivered ROI report accepted by the estate office.</p>
+        <ul class="tag-row mono"><li>Simulink</li><li>PVsyst</li><li>NEP 2022</li></ul>
+        <a class="card-link mono" href="#" data-project="p3">CASE STUDY →</a>
+      </article>
+
+      <article class="card project-card reveal" data-cat="pcb power" data-tags="Power Electronics,PCB,LTSpice">
+        <div class="card-top mono"><span>P-04</span><span>2023</span></div>
+        <h3>3.3 kW Totem-Pole GaN PFC</h3>
+        <p>Two-stage converter (PFC + LLC) targeting 96.4% peak efficiency. Thermal loop design,
+           gate-drive layout and magnetics selection; prototype ran 200 h at full load.</p>
+        <ul class="tag-row mono"><li>GaN FETs</li><li>LTSpice</li><li>Altium</li></ul>
+        <a class="card-link mono" href="#" data-project="p4">CASE STUDY →</a>
+      </article>
+
+      <article class="card project-card reveal" data-cat="embedded" data-tags="PLC,SCADA,MATLAB">
+        <div class="card-top mono"><span>P-05</span><span>2022</span></div>
+        <h3>Water Pump SCADA Retrofit</h3>
+        <p>Migrated six legacy DOL pump stations to S7-1200 VFD control with a Ignition SCADA
+           front-end. Cut dry-run failures to zero in the first year of operation.</p>
+        <ul class="tag-row mono"><li>TIA Portal</li><li>DNP3</li><li>HMI</li></ul>
+        <a class="card-link mono" href="#" data-project="p5">CASE STUDY →</a>
+      </article>
+
+      <article class="card project-card reveal" data-cat="power renewable" data-tags="DSP,Embedded C,Inverter">
+        <div class="card-top mono"><span>P-06</span><span>2022</span></div>
+        <h3>Single-Phase Grid-Tied Inverter (DS)</h3>
+        <p>Final-year capstone: 1 kW TI TMS320F28069 inverter with PLL synchronisation,
+           anti-islanding per IEEE 1547 and THD of 2.4% at rated output.</p>
+        <ul class="tag-row mono"><li>C2000 DSP</li><li>PLL</li><li>IEEE 1547</li></ul>
+        <a class="card-link mono" href="#" data-project="p6">CASE STUDY →</a>
+      </article>
+
+    </div>
+
+    <p class="empty-state mono" id="emptyState" hidden>NO PROJECTS MATCH THAT FILTER.</p>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section-alt" id="experience">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="num mono">04</span> WORK EXPERIENCE</h2>
+
+    <ol class="timeline">
+      <li class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-meta mono">2023 — PRESENT · ISLAMABAD</p>
+          <h3>Electrical Engineer — Transmission &amp; Distribution</h3>
+          <p class="tl-org">National Power Consulting Engineering Services (NIPES)</p>
+          <ul>
+            <li>Design reviews for 47 nos. of 132/11 kV substation expansions (single lines, cable sizing, BOM).</li>
+            <li>Owner's engineer on relay commissioning; authored the site test checklist still used by the team.</li>
+            <li>Coordinated with WAPDA/DISCOM planning on load growth forecasts up to 2035.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-meta mono">2022 — 2023 · RAWALPINDI</p>
+          <h3>Junior Electronics Engineer</h3>
+          <p class="tl-org">Metro Electronics (Pvt.) Ltd. — Power Products Division</p>
+          <ul>
+            <li>Brought up two UPS inverter boards from prototype to production (1.2 kVA – 3 kVA range).</li>
+            <li>Built an LTSpice + Python test-data pipeline that cut characterization reports from 2 days to 3 hours.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-body">
+          <p class="tl-meta mono">SUMMER 2021 · ISLAMABAD</p>
+          <h3>Engineering Intern — HV Lab</h3>
+          <p class="tl-org">School of Electrical Engineering &amp; Mechanical Sciences, NUST</p>
+          <ul>
+            <li>Assisted impulse and power-frequency withstand testing; maintained the lab safety logbook.</li>
+            <li>Modelled a 5-stage impulse generator in Simulink for the lab's teaching material.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="num mono">05</span> EDUCATION</h2>
+
+    <div class="edu-grid">
+      <article class="card edu-card reveal">
+        <p class="mono card-top"><span>2018 — 2022</span><span>ISLAMABAD</span></p>
+        <h3>BS Electrical Engineering</h3>
+        <p class="tl-org"><a class="ext" href="https://seems.nust.edu.pk/" target="_blank" rel="noopener">SEEMS — National University of Sciences &amp; Technology (NUST)</a></p>
+        <dl class="mini-dl mono">
+          <div><dt>CGPA</dt><dd>3.71 / 4.00</dd></div>
+          <div><dt>HONORS</dt><dd>Dean's List ×4</dd></div>
+          <div><dt>THESIS</dt><dd>Grid-tied inverter, IEEE 1547</dd></div>
+        </dl>
+        <p><strong>Coursework:</strong> Power Systems II, Power Electronics, Electromagnetic Fields,
+           Control Systems, Electric Machines, Digital Signal Processing, Microprocessors &amp; Microcontrollers,
+           High Voltage Engineering, Communication Systems.</p>
+      </article>
+
+      <article class="card edu-card reveal">
+        <p class="mono card-top"><span>2016 — 2018</span><span>HARIPUR</span></p>
+        <h3>FSc Pre-Engineering</h3>
+        <p class="tl-org">FG Public College, Haripur Campus (NUST-affiliated)</p>
+        <dl class="mini-dl mono">
+          <div><dt>MARKS</dt><dd>94.2% (HSSC-II)</dd></div>
+          <div><dt>SUBJECTS</dt><dd>Physics · Math · Chem</dd></div>
+        </dl>
+        <p>Represented the college at the regional science fair with a hand-wound alternator demo.</p>
+      </article>
+    </div>
+
+    <h3 class="sub-heading mono reveal">CERTIFICATIONS &amp; AWARDS</h3>
+    <ul class="award-list">
+      <li class="reveal"><span class="mono year">2024</span> ETAP Power System Analysis — Certified Professional User</li>
+      <li class="reveal"><span class="mono year">2023</span> Best Project Award, NIPES Internal Innovation Day</li>
+      <li class="reveal"><span class="mono year">2022</span> PEC Registered Engineer (Electrical) — BM-14xxxx</li>
+      <li class="reveal"><span class="mono year">2021</span> 1st Place, NUST SEE "Spark" Circuit Design Contest</li>
+      <li class="reveal"><span class="mono year">2020</span> Siemens TIA Portal Basic &amp; Advanced (online)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section section-alt" id="testimonials">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="num mono">06</span> WHAT PEOPLE SAY</h2>
+    <div class="quote-grid">
+      <blockquote class="card quote reveal">
+        <p>“Ahmed's coordination study found three mis-set relays we had missed for years.
+           He documents everything like it's going to be audited.”</p>
+        <footer class="mono">— M. Tariq Sheikh · Chief Engineer, T&amp;D Circle</footer>
+      </blockquote>
+      <blockquote class="card quote reveal">
+        <p>“The only junior who came back from the fab with a working first spin. Layout discipline
+           is genuinely rare.”</p>
+        <footer class="mono">— Sana Iqbal · Hardware Lead, Metro Electronics</footer>
+      </blockquote>
+      <blockquote class="card quote reveal">
+        <p>“His capstone was one of the cleanest bench demos I've supervised — measured waveforms
+           matched the Simulink model within a couple of percent.”</p>
+        <footer class="mono">— Dr. Farrukh Kamal · Advisor, SEEMS NUST</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="section-title reveal"><span class="num mono">07</span> CONTACT</h2>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="lead">Have a substation, a converter or a stubborn board that needs a second pair of eyes?</p>
+        <ul class="contact-list mono">
+          <li><span>EMAIL</span><a href="mailto:ahmed.raza.khan@example.com">ahmed.raza.khan@example.com</a></li>
+          <li><span>PHONE</span><a href="tel:+923001234567">+92 300 123 4567</a></li>
+          <li><span>LINKEDIN</span><a class="ext" href="https://www.linkedin.com/in/example-eengineer" target="_blank" rel="noopener">in/ahmedrazakhan</a></li>
+          <li><span>GITHUB</span><a class="ext" href="https://github.com/example" target="_blank" rel="noopener">@ahmedrk-power</a></li>
+          <li><span>LOCATION</span>Blue Area, Islamabad 44000, Pakistan</li>
+        </ul>
+        <div class="status-box reveal">
+          <span class="dot-live"></span> <span class="mono">LOCAL TIME <span id="clock">--:--:--</span> PKT</span>
+        </div>
+      </div>
+
+      <form class="card form reveal" id="contactForm" novalidate>
+        <div class="field">
+          <label class="mono" for="name">NAME *</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+          <small class="err mono" data-for="name"></small>
+        </div>
+        <div class="field">
+          <label class="mono" for="email">EMAIL *</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+          <small class="err mono" data-for="email"></small>
+        </div>
+        <div class="field">
+          <label class="mono" for="topic">TOPIC</label>
+          <select id="topic" name="topic">
+            <option>Power systems consultancy</option>
+            <option>Embedded / PCB design</option>
+            <option>Renewables &amp; storage</option>
+            <option>Full-time role</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label class="mono" for="message">MESSAGE *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Voltage level, frequency, deadline…" required></textarea>
+          <small class="err mono" data-for="message"></small>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">SEND MESSAGE ↗</button>
+        <p class="form-note mono" id="formNote" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <p class="mono">© <span id="year"></span> AHMED RAZA KHAN · ALL RIGHTS RESERVED</p>
+    <p class="mono footer-note">DESIGNED WITH NEO-BRUTALISM · NO TRACKERS · FAKE DATA FOR DEMO</p>
+    <a href="#top" class="btn btn-ghost btn-sm" id="toTop">BACK TO TOP ↑</a>
+  </div>
+</footer>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" tabindex="-1">
+    <button class="btn btn-icon modal-close" data-close aria-label="Close dialog">✕</button>
+    <p class="mono" id="modalKicker"></p>
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<button class="btn btn-primary back-to-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="js/app.js"></script>
+</body>
+</html>
